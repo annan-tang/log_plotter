@@ -1,0 +1,6 @@
+extend:
+  - jaxon-joint-real-leg_layout.yaml
+  - jaxon-joint-real-arm_layout.yaml
+  - jaxon-joint-real-torso_layout.yaml
+  - ../../imu_layout.yaml
+  - ../../force_sensors_layout.yaml

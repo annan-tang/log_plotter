@@ -30,7 +30,11 @@ main:
       - { key: st_currentBaseRpy, id: [0-2] }
       - { key: kf_rpy, id: [0-2] }
 
-  imu_gsensor:
+  rl_controller_body_rpy:  # for RLCOntroller.rtc; robot -Z axis direction related to world frame 
+    legends:
+      - { key: rl_controller_body_rpy, id: [0-2] }
+
+  imu_gsensor: # imu acceleration
     legends:
       - { key: imu_gsensor, id: [0], label: x }
       - { key: imu_gsensor, id: [1], label: y }
@@ -38,7 +42,7 @@ main:
     # downsampling: {ds: 100, auto: False, mode: peak}
     newline: False
 
-  imu_gyrometer:
+  imu_gyrometer: # imu angular velocity
     legends:
       - { key: imu_gyrometer, id: [0], label: x }
       - { key: imu_gyrometer, id: [1], label: y }

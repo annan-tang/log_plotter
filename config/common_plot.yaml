@@ -253,6 +253,11 @@ imu_gyrometer:
   func: plot_rad2deg
   data:
     - { log: RobotHardware0_gyrometer, column: [0-2] }
+# rl.rtc rpy
+rl_controller_body_rpy:
+  data:
+    - { log: RLController_body_rpy, column: [0-2] }
+
 # rpy
 sh_baseRpyOut:
   func: plot_rad2deg
